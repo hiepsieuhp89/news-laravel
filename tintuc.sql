@@ -1046,8 +1046,8 @@ INSERT INTO `staffs` (`id`, `position`, `email`, `password`, `name`, `phone_numb
 
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `facebook_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `google_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
