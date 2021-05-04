@@ -12,7 +12,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', function(){
-        return redirect('http://localhost:8000/news/public/admin/auth/logs');
+        return redirect(env('APP_URL').'admin/auth/logs');
     });
     $router->get('/api/chill-category', 'ChillCategoryController@api')->name('api.chillCategory');
 

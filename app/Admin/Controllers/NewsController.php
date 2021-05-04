@@ -105,7 +105,7 @@ class NewsController extends AdminController
         //$form->number('chill_category', __('Chill category'));
         $form->select('category', __('Category'))->options(
             Categorys::pluck('name', 'id')->toArray()
-        )->load('chill_category', '/news/public/admin/api/chill-category');
+        )->load('chill_category', route('api.chillCategory'));
 
         $form->select('chill_category', __('Chill category'));
         $form->select('author', __('Author'))->options(
