@@ -5,6 +5,9 @@
 <title>VnPoint</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="shortcut icon" type="image/png" href="logo.png"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
@@ -53,17 +56,17 @@
         attribution="setup_tool"
         page_id="100897248703274">
       </div>
-      
+
 	@include('client.templates.header')
 	@yield('content')
 	@include('client.templates.footer')
-	<script src="assets/js/jquery.min.js"></script> 
-	<script src="assets/js/wow.min.js"></script> 
-	<script src="assets/js/bootstrap.min.js"></script> 
-	<script src="assets/js/slick.min.js"></script> 
-	<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
-	<script src="assets/js/jquery.newsTicker.min.js"></script> 
-	<script src="assets/js/jquery.fancybox.pack.js"></script> 
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery.li-scroller.1.0.js"></script>
+	<script src="assets/js/jquery.newsTicker.min.js"></script>
+	<script src="assets/js/jquery.fancybox.pack.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/snow.js"></script>
 	<script src="alertifyjs/alertify.min.js"></script>
@@ -120,22 +123,22 @@
 	    	success:function(data){
 	    		if(data.status){
                         alertify.success(data.message);
-                } 
+                }
                         else{
                             if(data.isValidateError){
                                 let message_string = "";
                                 $.each(data.errors,function(name,message){
-                                    message_string += message + '<br>'; 
+                                    message_string += message + '<br>';
                                 })
                                 alertify
                                 .alert("Thông báo",message_string, function(){
-                                    
+
                                 });
-                            }   
+                            }
                             else{
                                 alertify
                                 .alert("Thông báo",data.message, function(){
-                                    
+
                                 });
                             }
                         }

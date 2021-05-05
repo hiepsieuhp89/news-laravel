@@ -35,11 +35,11 @@ return [
     'facebook' => [
         'client_id' => env('FB_CLIENT_ID'),
         'client_secret' => env('FB_CLIENT_SECRET'),
-        'redirect' => "https://vnpoint.herokuapp.com/auth/facebook/callback",
+        'redirect' => env("APP_URL")."/auth/facebook/callback",
     ],
     'google' => [
         'client_id' => env('GG_CLIENT_ID'),
         'client_secret' => env('GG_CLIENT_SECRET'),
-        'redirect' => 'https://vnpoint.herokuapp.com/auth/google/callback',
+        'redirect' => env("APP_URL") . '/auth/google/callback',
     ],
 ];
