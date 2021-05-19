@@ -403,8 +403,8 @@ return [
             // Editor configuration
             'config' => [
                 'cloudServices' => [
-                    'tokenUrl' => 'https://79706.cke-cs.com/token/dev/af56e5d5d627d274a2fa79f578d88df980122da9270f604c9e7e05feb11f',
-                    'uploadUrl' => 'https://79706.cke-cs.com/easyimage/upload/'
+                    'tokenUrl' => 'https://80730.cke-cs.com/token/dev/a816d31b9da56b7a29a8055b885f2fc365dc802d927e11e1ca4ae42906a5',
+                    'uploadUrl' => 'https://80730.cke-cs.com/easyimage/upload/'
                 ]
             ]
         ]
