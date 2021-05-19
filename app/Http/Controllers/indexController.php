@@ -24,7 +24,7 @@ class indexController extends Controller
             "Musik" => $musik,
         ];
         //dd($news);
-        $hotnew = News::where('hot',1)->inRandomOrder()->get();
+        $hotnew = News::where('hot',1)->orderby('id','desc')->get();
     	$data = [
     		'news_collections' => $news,
             'hotnew' => $hotnew,

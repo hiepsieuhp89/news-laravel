@@ -24,7 +24,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background: url(https://getwallpapers.com/wallpaper/full/d/b/9/722426-beautiful-vietnam-wallpapers-2560x1440-for-android.jpg);
+    background: azure;
     overflow: visible;
     background-attachment: fixed;
     background-position: center;
@@ -38,7 +38,7 @@ body{
     border-radius: 10px;
     background: whitesmoke;
     padding: 20px 30px;
-    box-shadow: 0px 0px 10px 3px #545454;
+    box-shadow: 0px 0px 10px 0px #545454;
 }
 .ajs-dialog .ajs-body .ajs-content{
             font-weight: 600;
@@ -73,7 +73,7 @@ body{
 
 button {
     padding: 12px;
-    background-image: linear-gradient(to right, #ff1464, purple);
+    background-image: linear-gradient(to right, #ff1464, #a70e1a);
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -121,14 +121,14 @@ body:before, body:after{
 }
 
 body:before{
-    background-image: linear-gradient(to right, #ff1464, purple);
+    background-image: linear-gradient(to right, #ff1464, #a70e1a);
     bottom: 0;
     left: 0;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 
 body:after{
-    background-image: linear-gradient(to right, purple, #ff1464);
+    background-image: linear-gradient(to right, #a70e1a, #ff1464);
     top: 0;
     right: 0;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
