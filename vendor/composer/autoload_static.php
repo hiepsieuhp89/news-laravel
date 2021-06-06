@@ -31,8 +31,8 @@ class ComposerStaticInit7e40822e58913fcf8807455e7f27cf7e
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
@@ -134,6 +134,10 @@ class ComposerStaticInit7e40822e58913fcf8807455e7f27cf7e
             'Laravel\\Socialite\\' => 18,
             'Laravel\\Scout\\' => 14,
             'Laravel\\Sail\\' => 13,
+        ),
+        'J' => 
+        array (
+            'Jxlwqq\\EnvManager\\' => 18,
         ),
         'I' => 
         array (
@@ -423,6 +427,10 @@ class ComposerStaticInit7e40822e58913fcf8807455e7f27cf7e
         'Laravel\\Sail\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
+        ),
+        'Jxlwqq\\EnvManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jxlwqq/env-manager/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -3312,6 +3320,10 @@ class ComposerStaticInit7e40822e58913fcf8807455e7f27cf7e
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Jxlwqq\\EnvManager\\Env' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/Env.php',
+        'Jxlwqq\\EnvManager\\EnvManager' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManager.php',
+        'Jxlwqq\\EnvManager\\EnvManagerServiceProvider' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/EnvManagerServiceProvider.php',
+        'Jxlwqq\\EnvManager\\Http\\Controllers\\EnvManagerController' => __DIR__ . '/..' . '/jxlwqq/env-manager/src/Http/Controllers/EnvManagerController.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
         'Laravel\\Scout\\Builder' => __DIR__ . '/..' . '/laravel/scout/src/Builder.php',
         'Laravel\\Scout\\Console\\FlushCommand' => __DIR__ . '/..' . '/laravel/scout/src/Console/FlushCommand.php',
