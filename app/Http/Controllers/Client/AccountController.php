@@ -21,11 +21,12 @@ class AccountController extends Controller
             //lấy người dùng đã đăng nhập
             $user = User::where('id',$req->user_id)->first();
 
-            //nếu người dùng chưa pin bài nào
-            if($user->pinned_news == '')
-                $user->pinned_news .= $req->post_id;
-            else
-                $user->pinned_news .= '|'.$req->post_id;
+            $pinned_news = explode('|',$user->pinned_news);
+
+            $pinned_news[count($pinned_news)] = $req->post_id;
+
+            $user->pinned_news = implode('|',$pinned_news);
+
             $user->save();
         }
         return response(['status'=>1,'message'=>'lưu bài viết thành công']);
@@ -35,14 +36,18 @@ class AccountController extends Controller
 
             //lấy người dùng đã đăng nhập
             $user = User::where('id',$req->user_id)->first();
-            $new_ids = explode('|',$user->pinned_news);
-            $update = '|';
 
-            foreach($new_ids as $new_id){
-                if(trim($new_id) != $req->post_id)
-                    $update .= '|'.trim($new_id);
+            $new_ids = explode('|',$user->pinned_news);
+
+            foreach($new_ids as $key => $new_id){
+
+                if(trim($new_id) == $req->post_id){
+
+                    unset($new_ids[$key]);
+                }
             }
-            $user->pinned_news = $update;
+            $user->pinned_news = implode('|',$new_ids);
+
             $user->save();
         }
         return response(['status'=>1,'message'=>'Bỏ lưu bài viết thành công']);

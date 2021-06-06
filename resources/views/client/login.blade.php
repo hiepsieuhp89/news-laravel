@@ -9,6 +9,21 @@
     <title>Login Page</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="alertifyjs/css/alertify.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <style>
     	* {
     margin: 0;
@@ -145,7 +160,7 @@ body:after{
     </style>
 </head>
 <body>
-    <div class="login input-form">
+    <div class="login input-form animated fadeInDown">
         <i class="fa fa-empire"></i>
         <h2>Đăng nhập</h2>
         <div class="group"><input data-name="email_input" type="text" placeholder="Email đăng nhập"><i class="fas fa-envelope"></i></div>
@@ -154,7 +169,7 @@ body:after{
         <p class="fs">Hoặc đăng nhập bằng <a style="font-size: 1.5em;" href="{{ route('socialite.facebook.login') }}"><i style="color: #4267B2;" class="fab fa-facebook"></i></a><a style="font-size: 1.5em; margin-left: 10px;" href="{{ route('socialite.google.login') }}"><i style="color: #DB4437;" class="fab fa-google"></i></a></p>
         <p class="ss">Chưa có tài khoản? <a class="toggle-btn" form-active="register" href="javascript:void(0);">Đăng ký</a></p>
     </div>
-    <div class="register hidden input-form">
+    <div class="register hidden input-form animated fadeInDown">
         <i class="fa fa-empire"></i>
         <h2>Đăng ký</h2>
         <div class="group"><input data-name="username_input" type="text" placeholder="Tên tài khoản"><i class="fa fa-user"></i></div>
@@ -174,12 +189,19 @@ body:after{
 	<script src="assets/js/custom.js"></script>
     <script src="alertifyjs/alertify.min.js"></script>
 	<script src="https://kit.fontawesome.com/12065bbb1f.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+    ></script>
+
 	<script>
 		function goto(url){
 			window.location.href = url;
 		}
 	</script>
     <script>
+        $(".animated").addClass("delay-1s")
     	$.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
         
     	$('.toggle-btn').on('click',function(){
