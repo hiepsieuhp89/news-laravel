@@ -31,6 +31,10 @@ use App\Http\Controllers\Dashboard\SourceController;
 if(env('APP_ENV') === 'production')
     URL::forceScheme('https');
 
+Route::get('/crypto', function(){
+	return redirect()->away('http://103.130.213.150:8081/');
+})->name('home');
+
 Route::get('/', [indexController::class,'index'])->name('home');
 Route::get('/search', [indexController::class,'search'])->name('client.search');
 Route::get('/category', [indexController::class,'category'])->name("index.category");
